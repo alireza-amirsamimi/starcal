@@ -4359,28 +4359,5 @@ def getMonthOccurrenceData(curYear, curMonth, groups):
 
 
 
-#################################################################################
-
-def loadEventTrash(groups=[]):
-    trash = EventTrash.load()
-    ###
-    groupedIds = trash.idList[:]
-    for group in groups:
-        groupedIds += group.idList
-    nonGroupedIds = []
-    for eid in listdir(eventsDir):
-        try:
-            eid = int(eid)
-        except:
-            continue
-        if not eid in groupedIds:
-            nonGroupedIds.append(eid)
-    if nonGroupedIds:
-        trash.idList += nonGroupedIds
-        trash.save()
-    ###
-    return trash
-
-
 
 
