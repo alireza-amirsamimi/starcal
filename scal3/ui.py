@@ -979,6 +979,7 @@ mainWin = None
 prefDialog = None
 eventManDialog = None
 timeLineWin = None
+yearWheelWin = None
 weekCalWin = None
 
 
