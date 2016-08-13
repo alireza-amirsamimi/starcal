@@ -24,6 +24,7 @@ from scal3.time_utils import (
     getJdFromEpoch,
     getFloatJdFromEpoch,
     getJhmsFromEpoch,
+    getUtcOffsetByEpoch,
     getUtcOffsetCurrent,
 )
 from scal3.date_utils import jwday, getEpochFromDate
